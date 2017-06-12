@@ -43,6 +43,7 @@
               <option value="22">10.00 pm to 10.59 pm</option>
               <option value="23">11.00 pm to 11.59 pm</option>
               <option value="0">12.00 am to 12.59 am</option>
+              <option value="34">Not sure</option>
             </select>
             <label>Time slots</label>
           </div>
@@ -157,6 +158,10 @@
         else if($('#timeslot').val() == null)
         {
           alert('Please select a time slot');
+        }
+        else if($('#timeslot').val() == 34)
+        {
+          window.location = 'https://chat.whatsapp.com/6GFS62cTBZEK8CjzQEKFJT';
         }
 			}
       $(document).ready(function() {
