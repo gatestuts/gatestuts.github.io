@@ -11,20 +11,25 @@
     </head>
 
     <body>
-			<div class="container pink darken-1">
+			<div class="container">
 				<br>
 				<center>
-					<h4 class="white-text">Click the below button to get yourself into a whatsapp group</h4>
+					<h4>Click the below button to get yourself into a whatsapp group</h4>
 					<br>
 					<a onclick="dynamiclink()" class="waves-effect waves-light btn-large">Join</a>
 				</center>
 				<br>
 				<br>
+        <!-- <p class="flow-text">Click the button below. Join WhatsApp Group and specify your phone number that you used to fill the form. Otherwise, you will need to send your handwritten question image using WhatsApp.</p>
+        <img class="materialboxed center-block" width="350" src="dynamic.jpeg"> -->
 			</div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 			<script type="text/javascript">
+      $(document).ready(function(){
+        $('.materialboxed').materialbox();
+      });
 			function dynamiclink()
 			{
 				var datenw = new Date();
